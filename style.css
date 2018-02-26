@@ -1,0 +1,50 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: fantasy;
+	line-height: 1.6;
+  font-family: "Times New Roman";
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.jumbotron{
+  height: 40em;
+  text-align: left;
+  background-color: rgb(88, 118, 150);
+}
+
+#jumboimg{
+  padding-top: 2em;
+}
+
+#namelist::first-letter {
+    font-size: 200%;
+    color: #02162A;
+}
+
+li:nth-child(2) {
+  padding-left: 1em;
+}
+
+li:nth-child(3) {
+  padding-left: 2em;
+}
+
+li:nth-child(4) {
+  padding-left: 3em;
+}
+
+li:nth-child(5) {
+  padding-left: 4em;
+}
+
+li:nth-child(6) {
+  padding-left: 5em;
+}
