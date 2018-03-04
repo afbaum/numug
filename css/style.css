@@ -23,9 +23,12 @@ body {
 #jumboimg{
   padding-top: 2em;
 }
+.namelist{
+  font-size: 50%;
+}
 
-#namelist::first-letter {
-    font-size: 200%;
+.namelist::first-letter {
+    font-size: 150%;
     color: #02162A;
 }
 

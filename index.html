@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
     <title>Nuclear Utility Meteorological Data Users Group, NUMUG</title>
   </head>
   <body>
@@ -37,12 +37,12 @@
             <h1 class="display-4">NUMUG</h1>
             <h3 class="d-md-block d-lg-none">Nuclear Utility Meteorological Data Users Group</h3>
             <ul class="lead list-unstyled  d-none d-lg-block">
-              <li id="namelist">Nuclear</li>
-              <li id="namelist">Utility</li>
-              <li id="namelist">Meteorological</li>
-              <li id="namelist">Data</li>
-              <li id="namelist">Users</li>
-              <li id="namelist">Group</li>
+              <li class="namelist">Nuclear</li>
+              <li class="namelist">Utility</li>
+              <li class="namelist">Meteorological</li>
+              <li class="namelist">Data</li>
+              <li class="namelist">Users</li>
+              <li class="namelist">Group</li>
             </ul>
           </div>
         </div>
@@ -50,38 +50,30 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 p-2">
-          <h2>NUMUG Mission</h2>
+      <div class=>
+        <div class="col">
+          <a class="navbar-brand" href="#">
+          <img src="images/numuglogo.gif" class="d-inline-block align-middle" alt="NUMUG logo">
+          </a>
+        </div>
+        <div class="col text-center">
+          <h2>Mission</h2>
           <p>To provide a forum to address problems and exchange ideas fot those collecting
           and utilizing meteorological data at nuclear facilities.</p>
         </div>
-        <div class="col-md-4">
-          <a class="navbar-brand" href="#">
-          <img src="images/numuglogo.gif" class="d-inline-block align-middle pl-4" alt="NUMUG logo">
-          </a>
-        </div>
-        <div class="col-md-4 p-2">
+        <div class="col text-center">
           <h2>Membership</h2>
           <p>NUMUG is open to any individual interested in pursuing the mission and
           objectives of the group.</p>
         </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 p-4 my-4">
-          <h2>NUMUG Orginization</h2>
+        <div class="col text-center pb-4">
+          <h2>Orginization</h2>
           <ul class="list-group">
-            <li class="list-group-item"><a class="nav-item nav-link" href="charter.html">Written Charter
+            <li class="list-group-item"><a class="nav-item nav-link" href="html/charter.html">Written Charter
             </a></li>
             <li class="list-group-item">Five Member Steering Committee</li>
             <li class="list-group-item">Three Members Representing U.S. Electric Utilities</li>
           </ul>
-        </div>
-        <div class="col-md-6 p-4">
-          <img src="images/atomwithcolor.jpg" class="d-inline-block align-middle pl-4" alt="NUMUG logo">
         </div>
       </div>
     </div>
@@ -151,5 +143,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
