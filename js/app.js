@@ -13,5 +13,5 @@ $(document).ready(function(){
       tiggerElement: '#missiontitle'
   })
   .setClassToggle('#missiontitle', 'fade-in') // add class to missiontitle
-  .addTo(controller);
+  .addTo(controller)
 });
