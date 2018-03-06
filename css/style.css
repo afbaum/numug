@@ -51,3 +51,18 @@ li:nth-child(5) {
 li:nth-child(6) {
   padding-left: 5em;
 }
+
+
+/*================================
+  main page style
+==================================*/
+
+.mainelements{
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.mainelements.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
