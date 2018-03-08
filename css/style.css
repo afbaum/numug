@@ -13,44 +13,32 @@ body {
 /* =================================
   Base Layout Styles
 ==================================== */
+#navbarNavAltMarkup{
+background-color:  rgb(88, 118, 150);
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+    text-align: center;
+}
 
 .jumbotron{
-  height: 40em;
+  height: 30em;
   text-align: left;
-  background-color: rgb(88, 118, 150);
+  background-image: url("../images/dc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #jumboimg{
   padding-top: 2em;
 }
-.namelist{
-  font-size: 50%;
-}
 
-.namelist::first-letter {
-    font-size: 150%;
-    color: #02162A;
-}
-
-li:nth-child(2) {
-  padding-left: 1em;
-}
-
-li:nth-child(3) {
-  padding-left: 2em;
-}
-
-li:nth-child(4) {
-  padding-left: 3em;
-}
-
-li:nth-child(5) {
-  padding-left: 4em;
-}
-
-li:nth-child(6) {
-  padding-left: 5em;
-}
 
 
 /*================================
