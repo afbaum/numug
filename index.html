@@ -8,29 +8,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"></link>
+    <script src="js/fontawesome-all.js"></script>
     <title>Nuclear Utility Meteorological Data Users Group, NUMUG</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light p-0 m-0">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Registration</a>
-          <a class="nav-item nav-link" href="#">Call for Papers</a>
-          <a class="nav-item nav-link" href="#">Position Papers</a>
-          <a class="nav-item nav-link" href="#">Presentation Archive</a>
-          <a class="nav-item nav-link" href="#">About Us</a>
-        </div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Call for Papers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Position Papers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+        </ul>
+          <button class="btn btn-primary my-2 my-sm-0" type="button">Login</button>
       </div>
     </nav>
+
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-6 py-2 col-centered">
+      <div class="row Aligner">
+        <div class="col-8 text-center py-4">
           <h1>NUMUG</h1>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-8 col-center">
+      <div class="row Aligner">
+        <div class="col-8 text-center py-4">
           <h2>Nuclear Utility Meteorological Data Users Group</h2>
         </div>
       </div>
@@ -50,17 +65,17 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container py-4 my-4">
       <div class= "row">
-        <div class="col-4 mx-auto">
+        <div class="col-md-4 mx-auto py-4">
           <div>
-            <h2>Mission</h2>
+            <h2 class="font-weight-bold">Mission</h2>
             <p>To provide a forum to address problems and exchange ideas fot those collecting
             and utilizing meteorological data at nuclear facilities.</p>
           </div>
         </div>
-        <div class="col-4 mx-auto">
-          <h2>Membership</h2>
+        <div class="col-md-4 mx-auto py-4">
+          <h2 class="font-weight-bold">Membership</h2>
           <p>NUMUG is open to any individual interested in pursuing the mission and
           objectives of the group.</p>
           <button type="button" class="btn btn-primary">Join Now!</button>
@@ -68,12 +83,16 @@
       </div>
     </div>
 
-    <div class="container">
-      <h2>NUMUG Accomplishments</h2>
+    <div class="container py-4 accomplishments">
+      <div class="row justify-content-center">
+        <div class="col-6 py-2 text-center">
+          <h1>NUMUG Accomplishments</h1>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-      <h2>NUMUG Leadership</h2>
+      <h2 class="py-4 mt-6">NUMUG Leadership</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card" style="width: 18rem;">
@@ -139,13 +158,39 @@
 
     <footer>
       <div class="container">
-        <h3>Connect on Social Media (add facebook, twiter and linkedin links)</h3>
-      </div>
-      <div class="container">
-        <h3>Stay in touch (email form)</h3>
-      </div>
-      <div class="container">
-        <p>copyright 2018 afb.inc</p>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Connect on Social Media</h3>
+              <div class="row pb-4">
+                <div class="col-sm-2">
+                  <i class="fab fa-facebook-f fa-3x"></i>
+                </div>
+                <div class="col-sm-2">
+                  <i class="fab fa-twitter fa-3x"></i>
+                </div>
+                <div class="col-sm-2">
+                  <i class="fab fa-linkedin-in fa-3x"></i>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6">
+            <h3>Stay in touch</h3>
+            <form>
+              <div class="form-group">
+                <label for="emailAddresForm">Email address</label>
+                <input type="email" class="form-control" id="emailAddresForm" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="emailTextArea">Enter text here</label>
+                <textarea class="form-control" id="emailTextArea" rows="3"></textarea>
+              </div>
+              <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+          </div>
+      <div class="container justify-content-center">
+        <div="col">
+          <p>copyright 2018 afb.inc</p>
+        </div>
       </div>
     </footer>
 
@@ -158,6 +203,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="js/app.js"></script>
+
     <!-- <script src="js/animate.js"></script> -->
   </body>
 </html>

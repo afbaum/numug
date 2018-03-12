@@ -13,18 +13,19 @@ body {
 /* =================================
   Base Layout Styles
 ==================================== */
-#navbarNavAltMarkup{
-background-color:  rgb(88, 118, 150);
+a{
+  color: light-gray !important;
+  font-size: 1.25em;
 }
 
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
-    text-align: center;
+.navbar{
+  background-color: black !important;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .jumbotron{
@@ -39,7 +40,11 @@ background-color:  rgb(88, 118, 150);
   padding-top: 2em;
 }
 
-
+.accomplishments{
+  height: 20em;
+  width: 100%;
+  background-color:  rgb(88, 118, 150);
+}
 
 /*================================
   main page style
@@ -53,4 +58,14 @@ background-color:  rgb(88, 118, 150);
 .mainelements.fade-in{
   opacity: 1;
   transform: translateY(0);
+}
+
+/*================================
+  footer style
+==================================*/
+
+footer{
+  background-color: rgb(88, 118, 150);
+  text: white;
+  padding-top: 2em;
 }
