@@ -30,14 +30,27 @@ a{
 
 .jumbotron{
   height: 30em;
-  text-align: left;
-  background-image: url("../images/dc.jpg");
+  background-color: rgb(88, 118, 150);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#jumboimg{
-  padding-top: 2em;
+.confDays{
+  height: 10em;
+  background-color: rgb(118,150,88);
+}
+
+.confLocation {
+  font-size: 4em;
+}
+
+.confDate, .confDaysText {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+#myDIV p{
+  font-size: 2em;
 }
 
 .accomplishments{
