@@ -46,7 +46,19 @@ html, body {
 }
 
 .confrence {
-		background-image: url("../images/nuclear.jpg")
+		background-image: url("../images/nuclear.jpg");
+		background-size: cover;
+		height: 500px;
+}
+
+.papers {
+		background-image: url("../images/weather-station.png");
+		background-size: cover;
+		height: 500px;
+}
+
+.imageText {
+		transform: translateY(75%);
 }
 
 .carousel-inner img {
