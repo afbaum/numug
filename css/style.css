@@ -1,84 +1,140 @@
-/* =================================
-  Base Element Styles
-==================================== */
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: fantasy;
-	line-height: 1.6;
-  font-family: "Times New Roman";
+html, body {
+	height: 100%;
+	width: 100%;
+	font-familty: sans-serif;
+	color: #222;
 }
 
-/* =================================
-  Base Layout Styles
-==================================== */
-a{
-  color: light-gray !important;
-  font-size: 1.25em;
+.navbar {
+	padding: .8rem;
 }
 
-.navbar{
-  background-color: black !important;
+.navbar-nav li {
+	padding: 15px;
 }
 
-.Aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav-link {
+	font-size: 1.1em !important;
 }
 
-.jumbotron{
-  height: 30em;
-  background-color: rgb(88, 118, 150);
-  background-repeat: no-repeat;
-  background-size: cover;
+.fixed-wrap{
+	background-image: url("../images/atom.jpg");
+	height: 500px;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.confDays{
-  height: 10em;
-  background-color: rgb(118,150,88);
+.padding {
+	padding-bottem: 2rem;
 }
 
-.confLocation {
-  font-size: 4em;
+.welcome {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
-.confDate, .confDaysText {
-  font-size: 2em;
-  padding-bottom: 1em;
+.welcome hr {
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
 }
 
-#myDIV p{
-  font-size: 2em;
+.confrence {
+		background-image: url("../images/nuclear.jpg")
 }
 
-.accomplishments{
-  height: 20em;
-  width: 100%;
-  background-color:  rgb(88, 118, 150);
+.carousel-inner img {
+	width: 100%;
+	height: 100%
 }
 
-/*================================
-  main page style
-==================================*/
-
-.mainelements{
-  transform: translateY(50px);
-  transition: all 1s ease-out;
+.carousel-caption {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-.mainelements.fade-in{
-  opacity: 1;
-  transform: translateY(0);
+.carousel-caption h1 {
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 15px #000;
 }
 
-/*================================
-  footer style
-==================================*/
+.carousel-caption h3 {
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 1px 1px 10px #000;
+	padding-bottom: 1em;
+}
 
-footer{
-  background-color: rgb(88, 118, 150);
-  text: white;
-  padding-top: 2em;
+.social a {
+	font-size: 4.5em;
+	padding: 3rem;
+}
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-twitter {
+	color: #00aced;
+}
+
+.fa-google-plus-g {
+	color: #dd4b39;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-slack:hover,
+.fa-google-plus-g:hover {
+	color: #d5d5d5;
+}
+
+footer {
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 50%;
+}
+
+
+
+/*-------- Media Queries -------*/
+
+@media (max-width: 992px){
+	.social a {
+		font-size: 4em;
+		padding: 2rem;
+}
+}
+
+@media (max-width: 768px){
+.carousel-caption {
+	top: 45%;
+}
+
+.carousel-caption h1 {
+	font-size: 350%;
+}
+
+.carousel-caption h3 {
+	font-size: 140%;
+	font-weight: 400;
+	padding-bottom: .2rem;
+}
+}
+
+@media (max-width: 567px){
 }
