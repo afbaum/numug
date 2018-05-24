@@ -1,0 +1,176 @@
+
+extends layout.pug
+
+block content
+  // Full page block with mission and Join now button
+  // Welcome Section
+  .container-fluid.padding
+    .row.welcome.text-center
+      .col-12
+        h1.display-4 NUMUG Mission
+      hr
+      .col-xs-12.col-sm-12.col-md-9.col-lg-9.col-xl-10
+        p.lead
+          | Providing a forum to address problems and exchange ideas for those
+          | collecting and utilizing meteorological data at nuclear facilities.  Membership is open
+          | to any individual interested in pursuing the mission and objectives of the group.
+      .col-xs-12.col-sm-12.col-md-3.col-lg-3.col-xl-2
+        a(href='#')
+          button.btn.btn-outline-secondary.btn-lg(type='button', data-toggle='modal', data-target='#joinModal')  Join Now!
+  hr.my-4
+  // Modals
+  #joinModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='joinModalLabel', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#joinModalLabel.modal-title Join Now!
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          form
+            .form-group
+              label(for='registerEmail') Email address
+              input#registerEmail.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+            .form-group
+              label(for='registerPassword') Password
+              input#registerPassword.form-control(type='password', placeholder='Password')
+            .form-group
+              label(for='registerPasswordVerify') Verify Password
+              input#registerPasswordVerify.form-control(type='password', placeholder='Verify Password')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Submit
+  #loginModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='loginModalLabel', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#loginModalLabel.modal-title Login
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          form
+            .form-group
+              label(for='loginEmail') Email address
+              input#loginEmail.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+            .form-group
+              label(for='loginPassword') Password
+              input#loginPassword.form-control(type='password', placeholder='Password')
+        .modal-footer
+          button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary(type='button') Submit
+  // two column block confrence and call for papers
+  .container-fluid.padding
+    .row.justify-content-around.padding
+      .col-lg-5.text-center.confrence
+        .imageText
+          h2 Join the Confrenece in 100 Days
+          h4 NUMUG 2018 Annual Confrence in Las Vegas Navada October 17-19.
+          br
+          button.btn.btn-primary(type='button') More Info
+      .col-lg-5.text-center.papers
+        .imageText
+          h2 Call For Papers
+          h4 For submition deadlines click below.
+          br
+          button.btn.btn-primary(type='button') More Info
+  // Committee Members
+  .container-fluid.padding
+    .row.welcome.text-center
+      .col-12
+        h1.display-4
+          | Meet the Team
+          h1
+      hr
+  // Cards
+  .container-fluid.padding
+    .row.padding
+      .col-md-4
+        .card
+          img.card-img-top(src='#')
+          .card-body
+            h4.card-title Francis J. Hickey
+            h5 Steering Committee Chair
+            p.card-text Chemistry Support Sr. Health Physicist
+            p.card-text
+              | Susquehanna Nuclear, LLC
+              br
+              |  769 Salem Blvd. NUCSA-3
+              br
+              |           Berwick, PA 18603
+            p.card-text Telephone: (570)542-3056
+            a.btn.btn-outline-secondary(href='#') See Profile
+      .col-md-4
+        .card
+          img.card-img-top(src='#')
+          .card-body
+            h4.card-title Heather A. Cramond
+            h5 Steering Committee
+            p.card-text
+              | Environmental Division Manager
+              br
+              |             Senior Environmental Meteorologist
+            p.card-text
+              | Murray and Trettel, Inc.
+              br
+              |  600 First Bank Drive
+              br
+              |           Palatine, IL 60067
+            p.card-text Telephone: (847)934-8125
+            a.btn.btn-outline-secondary(href='#') See Profile
+      .col-md-4
+        .card
+          img.card-img-top(src='../images/monkey.png')
+          .card-body
+            h4.card-title Jeffrey D. Baum
+            h5 Numug ANSI Liaison
+            p.card-text Meteorologist/Programmer
+            p.card-text
+              | ABS Consulting, Inc.
+              br
+              | 1390 Piccard
+              |           Drive Suite 350
+              br
+              | Rockville, MD 20850
+            p.card-text
+              | Telephone: (301)907-9100(x108)
+              br
+              | Facsimile: (301)990-7185
+            a.btn.btn-outline-secondary(href='#') See Profile
+  .col-md-4
+    .card
+      img.card-img-top(src='#')
+      .card-body
+        h4.card-title Steve Weinbeck
+        h5 Steering Committee
+        p.card-text Meteorologist
+        p.card-text
+          | Atmospheric Technologies Group
+          br
+          | Savannah River National
+          |           Lab
+        p.card-text Telephone: (803)725-6931
+        a.btn.btn-outline-secondary(href='#') See Profile
+  hr.my-4
+  // Full page bock with NUMUG accomplishments and Learn more button
+  // Image Carousel
+  #slides.carousel.slide(data-ride='carousel')
+    ul.carousel-indicators
+      li.active(data-target='#slides', data-slide-to='0')
+      li(data-target='#slides', data-slide-to='1')
+      li(data-target='#slides', data-slide-to='2')
+    .carousel-inner
+      .carousel-item.active
+        .container-fluid
+          .carousel-caption
+            h3 NRC RG-1.23(Rev 1)
+            p NUMUG acknowledged by NRC in their contribution to developing RG-1.23(R1)
+      .carousel-item
+        img(src='static/images/nuclear.jpg')
+        .carousel-caption
+          h3 Survery of Monitoring Systems
+          p compiled a database of meteorological monitoring programs
+      .carousel-item
+        img(src='stattic/images/energy.png')
+        .carousel-caption
+          h3 ANSI/ANS-3.11(2005)
+          p Initiated updates to ANSI/ANS-3.11 with support from DOE and DMCC
