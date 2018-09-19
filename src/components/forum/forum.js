@@ -13,14 +13,6 @@ class ControlledInput extends Component{
     this.setState({value: event.target.value})
   }
 
-
-
-    parser.parseURL('https://www.nrc.gov/public-involve/event.rss', function(err, feed) {
-      console.log(feed);
-    });
-
-
-
   render(){
     return(
       <div className='container'>

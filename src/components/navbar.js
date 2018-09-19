@@ -28,7 +28,7 @@ class Navbar extends Component{
                   <Link className="nav-link" to='/ControlledInput'>Forum</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">Presentation Archive</a>
+                  <Link className="nav-link" to='/Archive'>Presentation Archive</Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link">About Us</a>
