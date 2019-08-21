@@ -15,6 +15,16 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  company: {
+    type: String
+  },
+  location: {
+    type: String
+  },
+  status: {
+    type: String,
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now

@@ -9,8 +9,12 @@
     "concurrently": "^4.0.1",
     "express": "^4.16.4",
     "gravatar": "^1.6.0",
+    "gridfs-stream": "^1.1.1",
     "jsonwebtoken": "^8.3.0",
+    "method-override": "^3.0.0",
     "mongoose": "^5.3.3",
+    "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "validator": "^10.8.0"
@@ -28,7 +32,7 @@
     "url": "git+https://github.com/afbaum/numug.git"
   },
   "author": "Amanda Gray-Baum",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/afbaum/numug/issues"
   },
